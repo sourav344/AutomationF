@@ -131,20 +131,19 @@
         <plugin>
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.11.0</version>
+    <version>2.3.2</version>
     <configuration>
-        <fork>true</fork> <!-- Forks the compiler in a separate process -->
-        <source>8</source> <!-- Java source version -->
-        <target>8</target> <!-- Java target version -->
-        <annotationProcessorPaths> <!-- Configure Lombok annotation processing -->
-            <path>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.20</version> <!-- Adjust to a version compatible with Java 8 -->
-            </path>
-        </annotationProcessorPaths>
+        <!-- Fork the compiler in a separate process -->
+        <fork>true</fork>
+        
+        <!-- Java source version -->
+        <source>1.8</source>
+        
+        <!-- Java target version -->
+        <target>1.8</target>
     </configuration>
 </plugin>
+
 
         
     </plugins>

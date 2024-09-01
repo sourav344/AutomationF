@@ -20,7 +20,7 @@ public class DockerBase {
 		        return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
 		    } else if(browserName.equals("firefox")) {
 		        FirefoxOptions options = new FirefoxOptions();
-		        return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+		        return new RemoteWebDriver(new URL("http://35.154.169.54:4444/"), options);
 		    }
 		    else if(browserName.equals("edge")) {
 		        EdgeOptions options = new EdgeOptions();
