@@ -32,15 +32,12 @@ public class TestBase {
 	 * ReportNG, ExtentReports
 	 * Jenkins
 	 */
-	
 	public static WebDriver driver;
 	public static Properties config = new Properties();
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
 	protected static final Logger log = LogManager.getLogger(TestBase.class);
 	public String browser = null;	
-	
-	
     
 	@BeforeSuite
 	public void setUp() throws IOException
