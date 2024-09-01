@@ -24,7 +24,7 @@ public class DockerBase {
 		    }
 		    else if(browserName.equals("edge")) {
 		        EdgeOptions options = new EdgeOptions();
-		        return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+		        return new RemoteWebDriver(new URL("http://13.201.84.95:4444/"), options);
 		    }
 		  throw new IllegalArgumentException("Browser name not supported");
 	}
