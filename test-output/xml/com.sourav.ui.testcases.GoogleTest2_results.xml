@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.668">
+  <properties />
+  
+  
+            <testcase name="dataTest" time="0.125" classname="com.sourav.ui.testcases.GoogleTest2" />
+                <testcase name="dataTest" time="0.110" classname="com.sourav.ui.testcases.GoogleTest2" />
+                <testcase name="dataTest" time="0.132" classname="com.sourav.ui.testcases.GoogleTest2" />
+                <testcase name="dataTest" time="0.301" classname="com.sourav.ui.testcases.GoogleTest2" />
+      
+</testsuite>
