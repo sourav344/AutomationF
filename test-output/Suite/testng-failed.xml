@@ -3,21 +3,21 @@
 <suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="com.sourav.ui.testcases.Grid">
+      <class name="com.sourav.ui.testcases.Docker2">
         <methods>
-          <include name="launchGrid"/>
+          <include name="runDocker"/>
         </methods>
-      </class> <!-- com.sourav.ui.testcases.Grid -->
-      <class name="com.sourav.ui.testcases.Grid2">
+      </class> <!-- com.sourav.ui.testcases.Docker2 -->
+      <class name="com.sourav.ui.testcases.Docker1">
         <methods>
-          <include name="launchGrid"/>
+          <include name="runDocker"/>
         </methods>
-      </class> <!-- com.sourav.ui.testcases.Grid2 -->
-      <class name="com.sourav.ui.testcases.Grid3">
+      </class> <!-- com.sourav.ui.testcases.Docker1 -->
+      <class name="com.sourav.ui.testcases.Docker3">
         <methods>
-          <include name="launchGrid3"/>
+          <include name="runDocker"/>
         </methods>
-      </class> <!-- com.sourav.ui.testcases.Grid3 -->
+      </class> <!-- com.sourav.ui.testcases.Docker3 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

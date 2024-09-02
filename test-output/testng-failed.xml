@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="cucumber.StepRunner">
+      <class name="com.sourav.ui.testcases.Docker2">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1 2"/>
-          <include name="tearDownClass"/>
+          <include name="runDocker"/>
         </methods>
-      </class> <!-- cucumber.StepRunner -->
+      </class> <!-- com.sourav.ui.testcases.Docker2 -->
+      <class name="com.sourav.ui.testcases.Docker1">
+        <methods>
+          <include name="runDocker"/>
+        </methods>
+      </class> <!-- com.sourav.ui.testcases.Docker1 -->
+      <class name="com.sourav.ui.testcases.Docker3">
+        <methods>
+          <include name="runDocker"/>
+        </methods>
+      </class> <!-- com.sourav.ui.testcases.Docker3 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
