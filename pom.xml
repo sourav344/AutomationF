@@ -5,11 +5,12 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <dependencies>
-    <dependency>
+   <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.5.0</version> <!-- Use a version compatible with your code -->
+    <version>4.24.0</version> <!-- Use the latest stable version -->
 </dependency>
+
     <dependency>
       <groupId>com.aventstack</groupId>
       <artifactId>extentreports</artifactId>
