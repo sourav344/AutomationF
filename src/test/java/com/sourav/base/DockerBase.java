@@ -17,14 +17,17 @@ public class DockerBase {
 		
 		  if(browserName.equals("chrome")) {
 		        ChromeOptions options = new ChromeOptions();
-		        return new RemoteWebDriver(new URL("https://13.233.101.243:4444/"), options);
+		        options.setAcceptInsecureCerts(true); // This bypasses SSL validation
+		        return new RemoteWebDriver(new URL("https://13.233.101.243:4444/wd/hub"), options);
 		    } else if(browserName.equals("firefox")) {
 		        FirefoxOptions options = new FirefoxOptions();
-		        return new RemoteWebDriver(new URL("https://13.233.101.243:4444/"), options);
+		        options.setAcceptInsecureCerts(true); // This bypasses SSL validation
+		        return new RemoteWebDriver(new URL("https://13.233.101.243:4444/wd/hub"), options);
 		    }
 		    else if(browserName.equals("edge")) {
 		        EdgeOptions options = new EdgeOptions();
-		        return new RemoteWebDriver(new URL("https://13.233.101.243:4444/"), options);
+		        options.setAcceptInsecureCerts(true); // This bypasses SSL validation
+		        return new RemoteWebDriver(new URL("https://13.233.101.243:4444/wd/hub"), options);
 		    }
 		  throw new IllegalArgumentException("Browser name not supported");
 	}
