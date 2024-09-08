@@ -13,7 +13,7 @@ public class DockerBase {
 
     public WebDriver initializeBrowser(String browserName) throws MalformedURLException {
         // URL for the Selenium Grid hub
-        URL gridUrl = new URL("http://13.233.101.243:4444/wd/hub");
+        URL gridUrl = new URL("http://43.205.16.75:4444/wd/hub");
         
         if(browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
